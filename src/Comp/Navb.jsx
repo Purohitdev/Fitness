@@ -9,7 +9,7 @@ function Navb() {
     <>
     <Navbar expand="lg" className=" Nav">
       <Container>
-        <Navbar.Brand href="/" className='logo'>ZONIXX</Navbar.Brand>
+        <Navbar.Brand href="/" className='logo'>ZONEIS</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
