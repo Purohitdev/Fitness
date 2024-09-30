@@ -1,7 +1,41 @@
 import React from 'react'
 import As from "../../Ass/star.avif"
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 function Sec1() {
+
+    useGSAP(() => {
+
+
+        const t3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".sec1",
+                start: "top 0",
+                end: "bottom",
+                scrub: 3,
+                markers: true,
+            }
+        })
+
+        t3.from(".top-sec2 h1 , .top-right  ", {
+            y: 20,
+            opacity: 0,
+            stagger: 0.2,
+
+        })
+
+        t3.from(".box",{
+            x:50,
+            opacity:0,
+    
+
+        })
+
+
+    })
     return (
         <div className='sec1'>
             <div className="sec1-mid">
@@ -11,7 +45,7 @@ function Sec1() {
                     variety of equipment and classes to suit your needs. Our cardio
                     machines, weight lifting equipment, and functional training areas
                     provide a comprehensive workout experience.</p>
-                    <button className='button'>Join today</button>
+                <button className='button'>Join today</button>
 
             </div>
 

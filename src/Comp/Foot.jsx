@@ -37,7 +37,20 @@ function Foot() {
 
                     </div>
                     <div className="m-box">
+                        <p>I ABSOLUTELY LOVE THIS GEM!</p> 
+                          <div className="small-circle">
+                            <GoArrowUpRight className='down-arrow' />
+                        </div>
+                    </div>
+                    <div className="m-box">
                         <p>THES IS THE PLACE FOR TOUL</p>
+                        <div className="small-circle">
+                            <GoArrowUpRight className='down-arrow' />
+                        </div>
+
+                    </div>
+                    <div className="m-box">
+                        <p>GREAT PLACE TO WORK OUT!</p>
                         <div className="small-circle">
                             <GoArrowUpRight className='down-arrow' />
                         </div>
