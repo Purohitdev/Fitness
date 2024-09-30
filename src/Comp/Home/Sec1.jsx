@@ -16,23 +16,31 @@ function Sec1() {
                 start: "top 0",
                 end: "bottom",
                 scrub: 3,
-                markers: true,
+                markers:true,
             }
         })
 
         t3.from(".top-sec2 h1 , .top-right  ", {
             y: 20,
             opacity: 0,
-            stagger: 0.2,
+            stagger: 0.5,
 
         })
 
         t3.from(".box",{
             x:50,
             opacity:0,
+            stagger:0.1,
     
 
         })
+
+
+        // t3.from(".sec2  h1 , .sec2 .top-right ",{
+        //     y: 20,
+        //     opacity: 0,
+        //     stagger: 0.5,
+        // })
 
 
     })

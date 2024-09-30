@@ -785,6 +785,7 @@ form div{
 
   .sec2, .sec3 ,.sec1{
     padding: 20px;
+    overflow: hidden;
   }
 
   .footer h1{
