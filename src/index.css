@@ -1,0 +1,891 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@font-face {
+  font-family: "bold";
+  src: url(../BasementGrotesque-Black_v1.202.woff2);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 6px 25px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: 1.5px solid black;
+  background-color: transparent;
+  font-weight: 700;
+  font-family: "Chakra Petch", sans-serif;
+  transition: 1s all;
+
+
+}
+
+.button:hover{
+  background-color: #333;
+  color: whitesmoke;
+  border: 1.5px solid white;
+}
+
+
+.Nav {
+  font-family: "Chakra Petch", sans-serif;
+  margin-top: -10px;
+}
+
+
+.Nav .mid {
+  font-weight: 500;
+  margin-top: -14px;
+}
+
+.logo {
+  /* font-size: 50px; */
+  font-family: "bold";
+  font-size: 34px;
+
+}
+
+.main-hero-top {
+  padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-hero-top h1 {
+  font-family: "bold";
+  font-size: 120px;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.main-hero-top p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.main-hero-top span {
+  color: transparent;
+  -webkit-text-stroke: 3px #000000;
+
+}
+
+
+.mid-top {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 100px;
+  position: relative;
+
+
+
+
+}
+
+
+.main-in {
+  height: 60vh;
+  width: 100%;
+  border-radius: 60px;
+  background-image: url(https://i.pinimg.com/564x/71/ea/d4/71ead41b8af4223e50a83f9fa852e8ec.jpg);
+  background-position: center;
+  background-size: cover;
+  filter: brightness(70%);
+
+}
+
+/* .home {
+  padding-bottom: 100px;
+} */
+
+.upper-main {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  height: 60vh;
+  width: 86%;
+  /* background-color: rgba(255, 250, 250, 0.355); */
+  border-radius: 60px;
+  display: flex;
+  justify-content: baseline;
+
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+  background-color: #000000;
+}
+
+.inner-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content:; */
+  align-items: center;
+  margin-top: 120px;
+}
+
+
+
+.inner-main h1 {
+  color: white;
+  text-align: center;
+  font-size: 104px;
+  text-transform: uppercase;
+  font-family: "bold";
+  line-height: 0.9;
+  margin-bottom: 50px;
+
+}
+
+.bottom-main {
+  display: flex;
+  width: 90%;
+}
+
+.main1,
+.main2 {
+  /* border: 1px solid rgb(255, 247, 247); */
+  width: 100%;
+  color: white;
+
+}
+
+.main1 {
+  width: 70%;
+  font-size: 19px;
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main2 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.main2 p {
+  margin-top: 7px;
+}
+
+.play {
+  color: #000000;
+  font-size: 16px;
+}
+
+.sec1 {
+  padding: 50px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec1-mid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.sec1-mid h1 {
+  text-transform: uppercase;
+  font-family: "bold";
+}
+
+.sec1-mid p {
+  width: 50%;
+  font-family: "Chakra Petch", sans-serif;
+
+}
+
+.sec1-mid img {
+  height: 200px;
+}
+
+.sec2 {
+  padding: 50px 100px;
+
+}
+
+.sec2 h1 {
+  text-transform: uppercase;
+  font-family: "bold";
+
+}
+
+.sec2 p {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.small-circle {
+  height: 30px;
+  width: 30px;
+  background-color: #000000;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -15px;
+}
+
+.top-sec2 {
+  display: flex;
+  align-items: center;
+}
+
+.top-left,
+.top-right {
+  width: 100%;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.down-arrow {
+  color: white;
+}
+
+.bottom-sec2 {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0px;
+
+}
+
+.box {
+  height: 55vh;
+  border-radius: 50px;
+  width: 100%;
+  background-image: url(https://i.pinimg.com/736x/78/f7/23/78f723d26141e839a0b74b0854279061.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: 1s all;
+
+
+}
+
+.box:hover .hover {
+  transform: translateY(-30px);
+  transition: 1s all;
+
+}
+
+
+
+.hover {
+  height: 60px;
+  transform: translateY(110px);
+  width: 90%;
+  /* background-color: #f5eeee6e; */
+  background-color: #98959558;
+  transition: 1s all;
+  border-radius: 30px;
+  display: flex;
+  padding: 20px;
+  color: whitesmoke;
+
+
+
+}
+
+
+.box:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: 1s all;
+}
+
+.h1,
+.h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+
+
+.box:nth-child(2) {
+  background-image: url(https://i.pinimg.com/736x/b8/bd/38/b8bd38a8ee4ad7abb9e3ad233db06ac1.jpg);
+}
+
+.box:nth-child(3) {
+  background-image: url(https://i.pinimg.com/564x/64/ca/c6/64cac6ac011ded4bf310460fe932885e.jpg);
+
+}
+
+
+.h2 {
+  width: 15%;
+  justify-content: center;
+
+}
+
+
+.h2 .small-circle {
+  margin-top: 0px;
+  background-color: whitesmoke;
+
+}
+
+
+.h1 p {
+  margin-top: 20px;
+  font-size: 22px;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+.h2 .down-arrow {
+  font-size: 12px;
+  color: #000000;
+}
+
+.sec3 {
+  padding: 50px 100px;
+
+}
+
+.sec3 h1 {
+  text-transform: uppercase;
+  font-family: "bold";
+
+}
+
+.sec3 p {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+
+.main-sec3{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  /* padding: 50px 0px ; */
+
+  height: 70vh;
+  overflow: hidden;
+}
+
+.trigger{
+  display: flex;
+  flex-direction: column;
+}
+
+.trigger button{
+  height: 20vh;
+  background-color: transparent;
+  color:black;
+  border-bottom: 1px solid black;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-family: "bold";
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.trigger button:hover{
+  /* background-color: #000000;
+  color: whitesmoke;
+  transition: 1s all; */
+  background-color: transparent;
+  color: black;
+  border-bottom: 1px solid black;
+
+}
+
+
+
+
+
+
+.trigger .det{
+  width: 30%;
+  display: flex;
+}
+
+
+
+.trigger button img{
+  height: 100px;
+}
+
+.trigger,.show{
+  width: 100%;
+
+}
+
+.btn-primary{
+  border: none;
+}
+
+.collapse{
+  height: 100%;
+  transition: 0.5s all;
+  
+  
+
+}
+
+
+
+
+/*  */
+
+
+.show .card {
+  background-color: white;
+  border-radius: 15px; /* More rounded corners */
+  padding: 20px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden; /* To ensure the rounded corners are applied */
+  transform: translateX(100px);
+}
+
+.show{
+  width: 80%;
+
+}
+
+.show .card:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.gym-name {
+  font-size: 26px;
+  color: #333; /* Dark grey for a softer contrast */
+  margin: 0 0 10px;
+  text-align: start;
+  text-transform: uppercase;
+  font-family: "bold";
+}
+
+.price {
+  background-color: #333; /* Dark background for price section */
+  color: white;
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.amount {
+  font-size: 36px; /* Larger font for price */
+  text-transform: uppercase;
+  font-family: "bold";
+}
+
+.details {
+  font-size: 14px;
+  margin: 5px 0;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.benefits {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.benefits li {
+  margin: 8px 0; /* Slightly larger spacing between items */
+  font-size: 15px; /* Slightly larger font */
+  color: #555; /* Medium grey for benefits */
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.cta-button {
+  background-color: #38393a; /* Primary color for the button */
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 8px; /* Rounded button corners */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2); /* Soft shadow for button */
+  text-transform: uppercase;
+  font-family: "bold";
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.footer{
+  background-color: #212121;
+  /* padding: 100px; */
+  padding-bottom: 50px;
+}
+
+.footer h1{
+  text-transform: uppercase;
+  font-family: "bold";
+  font-size: 102px;
+  line-height: 0.95;
+  padding-bottom: 20px;
+}
+
+.footer p{
+  font-family: "Chakra Petch", sans-serif;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+.top-fot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  padding-bottom: 50px;
+}
+
+.top-fot img{
+  mix-blend-mode: exclusion;
+transform: translateY(15px);
+}
+
+.footer .button{
+  border: 1.5px solid rgba(245, 245, 245, 0.741);
+  color: whitesmoke;
+}
+
+.footer .button:hover{
+  background-color: rgba(255, 255, 255, 0.308);
+  transition: 1s all;
+}
+
+.bot-fot{
+  padding: 20px;
+
+}
+
+.m-box{
+  padding: 20px;
+  margin: 0px 20px;
+  border-radius: 20PX;
+  background-color: rgba(255, 255, 255, 0.186);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.m-box p{
+  margin: 0px;
+  padding: 0px;
+  color: whitesmoke;
+}
+
+.m-box .small-circle{
+  background-color: rgba(245, 245, 245, 0.474);
+  margin-top: 1px;
+}
+
+
+
+.contact{
+  height: 90vh;
+  display: flex;
+  padding: 10px;
+}
+
+.c1,.c2{
+  width: 100%;
+}
+
+.c1 iframe{
+  height: 100%;
+  width: 100%;
+}
+
+form label{
+  text-transform: uppercase;
+  font-family: "bold";
+}
+
+form div{
+  padding: 20px;
+
+}
+
+
+/*  */
+
+
+.map-section {
+  flex: 1;
+  min-width: 400px;
+  height: 450px; /* Setting fixed height for the map */
+}
+
+.form-section {
+  flex: 1;
+  min-width: 400px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s ease;
+  font-family: "Chakra Petch", sans-serif;
+
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+/* Submit Button Styling */
+
+
+/* Textarea Styling */
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+.form-section .button{
+  width: 10%;
+  margin-left: 20px;
+}
+
+.class{
+  width: 40%;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-section, .form-section {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+
+
+  .form-section .button{
+    width: 100%;
+    margin: 0px;
+   
+  }
+  
+  .class{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width:0px) and (max-width:600px) {
+
+  .main-hero-top h1{
+    font-size: 3rem;
+  }
+
+  .main{
+    padding: 20px 0px;
+  }
+
+  .main-in{
+    height: 80vh;
+    border-radius: 40px;
+  }
+
+  .inner-main h1{
+    font-size: 3rem;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+
+  .upper-main{
+    left: 22px;
+  }
+
+  .sec2, .sec3 ,.sec1{
+    padding: 20px;
+  }
+
+  .footer h1{
+    font-size: 2.6rem;
+  }
+
+  .sec1-mid p{
+    width: 90%;
+  }
+
+  .main-hero-top{
+    padding: 30px 0px;
+  }
+
+  
+  .bottom-main ,.main-sec3,   .bottom-sec2{
+    flex-direction: column;
+  }
+
+  .show .card{
+    transform: translateX(0px);
+    margin-top: 20px;
+  }
+
+  .main1{
+    width: 100%;
+  }
+
+  .main2{
+    justify-content: start;
+    margin-top: 10px;
+  }
+
+  .h2{
+    width: 20%;
+  }
+
+  .show{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+
+  .inner-main{
+    align-items: start;
+  }
+
+  .top-fot{
+    padding: 20px;
+  }
+
+  .main-sec3{
+    height: 100%;
+  }
+
+  
+
+}
+
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+
+  .main-hero-top h1{
+    font-size: 110px;
+  }
+
+  .main{
+    padding: 0px 50px;
+  }
+
+  .upper-main{
+    left: 20px;
+    width: 100%;
+  }
+
+  .sec1-mid p{
+    width: 70%;
+  }
+
+  .sec2 ,.sec3{
+    padding:20px 50px;
+  }
+
+  .bottom-sec2{
+    flex-direction: column;
+  }
+
+  .show .card{
+    transform: translateX(50px);
+  }
+
+  .footer h1{
+    font-size: 85px;
+  }
+
+  .bot-fot{
+    overflow: hidden;
+  }
+
+  *{
+    overflow-x: hidden;
+  }
+
+}
