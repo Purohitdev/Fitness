@@ -17,7 +17,6 @@ function Tsec1() {
             start: "top 90%",
             end: "bottom",
             scrub: 3,
-            markers:true,
         }
     })
 
