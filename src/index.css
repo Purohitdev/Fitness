@@ -736,6 +736,32 @@ form div{
   width: 40%;
 }
 
+.tsec1{
+  height: 100%;
+  padding: 0px 100px;
+  padding-bottom: 50px;
+}
+
+.tsec1 h1{
+  font-family: "bold";
+}
+
+.tsec1 h2{
+  font-family: "Chakra Petch", sans-serif;
+  margin-top: 20px;
+}
+
+
+
+.tsec1 li, p{
+  font-family: "Chakra Petch", sans-serif;
+
+}
+
+.bit{
+  margin:50px 0px;
+}
+
 /* Responsive Layout */
 @media (max-width: 768px) {
   .contact-container {
@@ -850,6 +876,10 @@ form div{
 
   .main-sec3{
     height: 100%;
+  }
+
+  .tsec1{
+    padding: 0px 20px;
   }
 
   
