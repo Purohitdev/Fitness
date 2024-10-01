@@ -16,8 +16,8 @@ function Sec3() {
             scrollTrigger: {
                 trigger: ".footer",
                 start: "top 90%",
-                end: "bottom 50%",
-                scrub: 3,
+                end: "bottom 90%",
+                scrub: 2,
             }
         })
 
