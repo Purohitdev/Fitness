@@ -18,7 +18,6 @@ function Foot() {
                 start: "top 90%",
                 end: "bottom 90%",
                 scrub: 2,
-                markers:true,
             }
         })
 
