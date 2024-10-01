@@ -774,6 +774,11 @@ form div{
     border-radius: 40px;
   }
 
+  .footer h1 {
+    text-align: center;
+  }
+
+
   .inner-main h1{
     font-size: 3rem;
     text-align: start;
