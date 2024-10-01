@@ -16,7 +16,6 @@ function Sec1() {
                 start: "top 0",
                 end: "bottom",
                 scrub: 3,
-                markers:true,
             }
         })
 
@@ -30,17 +29,11 @@ function Sec1() {
         t3.from(".box",{
             x:50,
             opacity:0,
-            stagger:0.1,
+            // stagger:0.1,
     
 
         })
-
-
-        // t3.from(".sec2  h1 , .sec2 .top-right ",{
-        //     y: 20,
-        //     opacity: 0,
-        //     stagger: 0.5,
-        // })
+   
 
 
     })

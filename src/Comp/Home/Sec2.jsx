@@ -1,29 +1,8 @@
 import React from 'react'
 import { GoArrowUpRight } from "react-icons/go";
-import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
-
 
 function Sec2() {
 
-    useGSAP(() => {
-
-        const t4 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".sec3",
-                start: "top 0",
-                end: "bottom",
-                scrub: 3,
-                markers: true,
-            }
-        })
-
- 
-
-
-    })
     return (
         <div className='sec2'>
             <div className="top-sec2">

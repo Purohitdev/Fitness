@@ -3,8 +3,38 @@ import { GoArrowUpRight } from "react-icons/go";
 import { Collapse, Button } from 'react-bootstrap';
 import As from "../../Ass/new.png";
 import { FiPlus } from "react-icons/fi";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 function Sec3() {
+
+    useGSAP(() => {
+
+        const t4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".footer",
+                start: "top 90%",
+                end: "bottom 50%",
+                scrub: 3,
+            }
+        })
+
+
+        t4.from(".top-fot img , .top-fot h1 , .top-fot p ",{
+            x:100,
+            opacity:0,
+            stagger:0.2,
+
+        })
+
+
+     
+
+    })
+
+
     // State to manage which section is open (default to 1 for BASIC section)
     const [openSection, setOpenSection] = useState(1);
 
