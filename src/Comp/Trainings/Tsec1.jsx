@@ -1,11 +1,59 @@
 import React from 'react'
-
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 function Tsec1() {
+
+
+
+  useGSAP(() => {
+
+
+    const ts1 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".tsec1",
+            start: "top 90%",
+            end: "bottom",
+            scrub: 3,
+            markers:true,
+        }
+    })
+
+
+    ts1.from(".tsec1 .toppp",{
+      y:20,
+      opacity:0,
+      stagger:0.2,
+      
+    })
+
+    ts1.from(".bit",{
+      y:20,
+      opacity:0,
+      
+    })
+
+    ts1.from(".tsec1 li",{
+      y:20,
+      opacity:0,
+      stagger:0.2,
+      
+    })
+
+
+
+
+
+
+})
+
+
   return (
     <div className='tsec1'>
-        <h1>ZONEIS Gym Training Regimen</h1>
-        <p>At ZONEIS, we focus on a balanced and personalized approach to fitness, combining strength training, cardio, flexibility, and mobility exercises to ensure complete physical conditioning. The training regimen is designed for all fitness levels, from beginners to advanced athletes.</p>
+        <h1 className='toppp'>ZONEIS Gym Training Regimen</h1>
+        <p className='toppp'>At ZONEIS, we focus on a balanced and personalized approach to fitness, combining strength training, cardio, flexibility, and mobility exercises to ensure complete physical conditioning. The training regimen is designed for all fitness levels, from beginners to advanced athletes.</p>
 
         <h1 className='bit'>Core Training Programs:</h1>
 
