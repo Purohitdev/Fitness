@@ -25,7 +25,7 @@ function Contact() {
     <div className='contact-container'>
       <div className="map-section">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.157519109042!2d72.97801757555684!3d19.18329764708361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b91b9ca28543%3A0xdcbbe949c3eb5f96!2sRaghoba%20Shankar%20Road%2C%20Phule%20Market%2C%20Thane%20West%2C%20Thane%2C%20Maharashtra%20400601!5e0!3m2!1sen!2sin!4v1727702712159!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.157519109042!2d72.97801757555684!3d19.18329764708361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b91b9ca28543%3A0xdcbbe949c3eb5f96!2sSahyog%20College%20of%20IT%20and%20Management!5e0!3m2!1sen!2sin!4v1696212693890!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}
