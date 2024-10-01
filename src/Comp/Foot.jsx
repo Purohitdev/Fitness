@@ -1,10 +1,39 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
 import { GoArrowUpRight } from "react-icons/go";
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 
 
 function Foot() {
+
+    useGSAP(() => {
+
+        const t4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".footer",
+                start: "top 90%",
+                end: "bottom 90%",
+                scrub: 2,
+            }
+        })
+
+
+        t4.from(".top-fot img , .top-fot h1 , .top-fot p ",{
+            x:100,
+            opacity:0,
+            stagger:0.2,
+            duration:0.5,
+
+        })
+
+
+     
+
+    })
     return (
         <div className="footer">
             <div className="top-fot">
