@@ -15,7 +15,7 @@ function Tsec1() {
         scrollTrigger: {
             trigger: ".tsec1",
             start: "top 90%",
-            end: "bottom",
+            end: "bottom 80%",
             scrub: 3,
         }
     })

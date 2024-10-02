@@ -766,6 +766,98 @@ form div{
   overflow: hidden;
 }
 
+
+
+.testi{
+  padding: 50px 100px;
+}
+
+.top-testi{
+  text-align: center;
+}
+
+.top-testi h1{
+  font-family: "bold";
+}
+
+.top-testi p{
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.test-box{
+  height: 200px;
+  width: 350px;
+  border: 1px solid rgba(128, 128, 128, 0.589);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+.bottom-testi{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.Secondmark{
+  margin-top: 10px;
+}
+
+.top-box{
+  height: 30%;
+  display: flex;
+}
+
+.avtar , .mid-name , .iconn{
+  width: 100%;
+  height: 100%;
+}
+
+.avtar  , .iconn{
+  width: 40%;
+}
+
+.min-circle{
+  height: 95%;
+  width: 85%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.min-circle img{
+  height: 100%;
+  width: 100%;
+
+}
+
+.mid-name{
+  display: flex;
+  flex-direction: column;
+  padding-left:5px;
+
+}
+
+
+
+.mid-name h1{
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 3px;
+}
+
+.mid-name p{
+  margin-top: 0px;
+}
+
+.deta p{
+  padding: 10px;
+}
+
+.iconn img{
+  height: 100%;
+}
+
+
 /* Responsive Layout */
 @media (max-width: 768px) {
   .contact-container {
@@ -884,6 +976,10 @@ form div{
 
   .tsec1{
     padding: 0px 20px;
+  }
+
+  .testi{
+    padding: 50px 20px;
   }
 
   
