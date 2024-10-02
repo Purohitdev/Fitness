@@ -1,4 +1,36 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import './App.css';
+// import Home from './Comp/Home/Home';
+// import About from './Comp/About/About';
+// import Testimonials from './Comp/Testimonials/Testimonials';
+// import Trainings from './Comp/Trainings/Trainings';
+// import Contact from './Comp/Contact/Contact';
+// import Navb from './Comp/Navb';
+// import Foot from './Comp/Foot';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Navb />
+//       <Routes>
+//         <Route path='/' element={<Home />} />
+//         <Route path='/about' element={<About />} />
+//         <Route path='/trainings' element={<Trainings />} />
+//         <Route path='/testimonials' element={<Testimonials />} />
+//         <Route path='/contact' element={<Contact />} />
+//       </Routes>
+//       <Foot />
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
+
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import './App.css';
 import Home from './Comp/Home/Home';
 import About from './Comp/About/About';
@@ -10,8 +42,14 @@ import Foot from './Comp/Foot';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.location.reload();
+  }, [location.pathname]);
+
   return (
-    <Router>
+    <>
       <Navb />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -21,9 +59,18 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Foot />
+    </>
+  );
+}
+
+function AppWrapper() {
+  return (
+    <Router>
+      <App />
     </Router>
   );
 }
 
-export default App;
+export default AppWrapper;
+
 
