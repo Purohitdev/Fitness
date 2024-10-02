@@ -1,8 +1,31 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 import st from "../../Ass/star.avif"
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 function Testimonials() {
+
+  useGSAP(() => {
+
+    const tt1 = gsap.timeline( );
+
+    tt1.from(".top-testi h1 , .top-testi p", {
+      y:100,
+      opacity:0,
+      duration:0.6,
+
+      
+      })
+
+
+
+
+
+  })
+
   return (
     <div className='testi'>
       <div className="top-testi">
@@ -29,7 +52,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -49,7 +72,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -69,7 +92,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -89,7 +112,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -109,7 +132,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -129,7 +152,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -138,7 +161,7 @@ function Testimonials() {
 
 
         <Marquee className='Secondmark' direction="right" speed="80" pauseOnHover="true">
-        <div className="test-box">
+          <div className="test-box">
             <div className="top-box">
               <div className="avtar">
                 <div className="min-circle">
@@ -154,7 +177,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -174,7 +197,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -194,7 +217,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -214,7 +237,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -234,7 +257,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -254,7 +277,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
@@ -274,7 +297,7 @@ function Testimonials() {
               </div>
             </div>
             <div className="deta">
-            <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
+              <p>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus perspiciatis debitis cumque tempora qui vero, eaque voluptas dolore, pariatur natus  </p>
 
             </div>
           </div>
