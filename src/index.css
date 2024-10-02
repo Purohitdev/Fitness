@@ -791,7 +791,21 @@ form div{
   border-radius: 20px;
   margin: 10px;
   padding: 10px;
+  transition: 1s all;
   
+}
+
+
+.test-box:hover{
+  background-color: #21212117;
+  transition: 1s all;
+
+}
+
+.test-box:hover .iconn img{
+ mix-blend-mode: color-burn;
+ transition: 1s all;
+
 }
 
 .bottom-testi{
@@ -855,6 +869,7 @@ form div{
 
 .iconn img{
   height: 100%;
+  transition: 1s all;
 }
 
 
