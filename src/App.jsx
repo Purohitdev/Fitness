@@ -22,6 +22,7 @@ function App() {
       </Routes>
       <Foot />
     </Router>
+    
   );
 }
 
