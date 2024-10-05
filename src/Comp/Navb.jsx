@@ -4,6 +4,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar'; import { NavLink } from 'react-router-dom';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import { Link } from 'react-router-dom'
+import Register from './Register';
 
 
 
@@ -18,41 +20,41 @@ function Navb() {
       x: -100,
       opacity: 0,
     }, "st")
-    
+
     t1.from(".button-div", {
       x: 100,
       opacity: 0,
       duration: 0.6,
     }, "st")
-    
-    t1.from(".nav-link", {
-      y: -50, 
+
+    t1.from(".mx-auto .nav-link", {
+      y: -50,
       opacity: 0,
       stagger: 0.1,
-    })  
-    
-    t1.from(".mid-top p",{
-      y:-20,
-      opacity:0,
+    })
 
-    },"st1")
+    t1.from(".mid-top p", {
+      y: -20,
+      opacity: 0,
 
-    t1.from(".mid-top h1",{
-      y:20,
-      opacity:0,
-      stagger:1,
+    }, "st1")
 
-    },"st1")
+    t1.from(".mid-top h1", {
+      y: 20,
+      opacity: 0,
+      stagger: 1,
+
+    }, "st1")
 
 
-    t1.from(".main-in , .upper-main , .inner-main h1 ",{
-      y:100,
-      opacity:0,
-      stagger:0.5,
+    t1.from(".main-in , .upper-main , .inner-main h1 ", {
+      y: 100,
+      opacity: 0,
+      stagger: 0.5,
 
     })
 
-    
+
   })
 
 
@@ -71,7 +73,12 @@ function Navb() {
               <NavLink className="nav-link" to="/Contact">Contact</NavLink>
             </Nav>
             <div className="button-div">
-              <button className='button'>Join today</button>
+              {/* <button className='button'>Register</button> */}
+              <button class="buttonn" >
+
+                <Link className="nav-link" to="/Register">Register</Link>
+
+              </button>
             </div>
           </Navbar.Collapse>
         </Container>

@@ -1,5 +1,7 @@
 import React from 'react'
 import { GoArrowUpRight } from "react-icons/go";
+import { Link } from 'react-router-dom'
+
 
 function Sec2() {
 
@@ -11,9 +13,18 @@ function Sec2() {
 
                 </div>
                 <div className="top-right">
-                    <p>see all</p>
+                    <Link className="nav-link" to="/Trainings" >
+                        <p>see all</p>  
+
+                    </Link>
+
                     <div className="small-circle">
-                        <GoArrowUpRight className='down-arrow' />
+
+
+                        <Link className="nav-link" to="/Trainings" >
+                            <GoArrowUpRight className='down-arrow' />
+
+                        </Link>
 
 
                     </div>

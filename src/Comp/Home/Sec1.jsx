@@ -4,6 +4,8 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
+import { Link } from 'react-router-dom'
+
 
 function Sec1() {
 
@@ -46,7 +48,9 @@ function Sec1() {
                     variety of equipment and classes to suit your needs. Our cardio
                     machines, weight lifting equipment, and functional training areas
                     provide a comprehensive workout experience.</p>
-                <button className='button'>Join today</button>
+                <button className='button' >  
+                <Link className="nav-link" to="/contact" >Join today</Link>
+                </button>
 
             </div>
 

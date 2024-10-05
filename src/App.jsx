@@ -42,6 +42,9 @@ const About = lazy(() => import('./Comp/About/About'));
 const Testimonials = lazy(() => import('./Comp/Testimonials/Testimonials'));
 const Trainings = lazy(() => import('./Comp/Trainings/Trainings'));
 const Contact = lazy(() => import('./Comp/Contact/Contact'));
+const Register = lazy(() => import('./Comp/Register'));
+
+
 
 // Layout component that stays persistent
 const Layout = () => {
@@ -67,6 +70,8 @@ function App() {
             <Route path='trainings' element={<Trainings />} />
             <Route path='testimonials' element={<Testimonials />} />
             <Route path='contact' element={<Contact />} />
+            <Route path='Register' element={<Register />} />
+
           </Route>
         </Routes>
       </Suspense>

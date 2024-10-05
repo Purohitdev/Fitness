@@ -873,6 +873,30 @@ form div{
 }
 
 
+.resiter{
+  height: 100vh;
+  padding-bottom: 20px;
+
+}
+
+.res{
+  display: flex;
+  height: 100%;
+}
+
+.r1,.r2{
+  width: 100%;
+  border: 1px solid black;
+  height: 100%;
+}
+
+.m-box , .nav-link{
+  cursor:pointer
+}
+
+
+
+
 /* Responsive Layout */
 @media (max-width: 768px) {
   .contact-container {
