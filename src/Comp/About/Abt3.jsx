@@ -45,7 +45,7 @@ function Abt3() {
                 <p>Our team, a diverse mix of exceptional talent, work tirelessly to ensure your experience is unparalleled. They're the gears behind our operations - from sales, marketing and e-commerce, customer service, warehousing, finance, human resources, to R&D and management.</p>
                 <p>If you're on the lookout for a growth-fostering role in an empowering, inclusive environment that values great work, than you should get in touch!</p>
 
-                <button className='button'> Regiter </button>
+                <button className='buttonn'> Register </button>
             </div>
             <div className="abt3-mid">
                 <div className="abt3-box"></div>

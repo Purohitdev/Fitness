@@ -57,7 +57,7 @@ function Abt1() {
                 <p>Our real success lies in the thousands of customers we've empowered to live longer, more joyful, and healthier lives. We're more than just a fitness company – we're your partners in health, your cheerleaders on the sideline, motivating you to reach your personal fitness goals. Embrace the fitness journey with us and see how it transforms your world.</p>
                 <p>Join us in our mission to improve lives through fitness and wellness, because at Gym and Fitness, your health is our passion.</p>
 
-                <button className='button'> Join us</button>
+                <button className='buttonn'> Join us</button>
             </div>
 
 
