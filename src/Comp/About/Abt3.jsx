@@ -15,7 +15,6 @@ function Abt3() {
                 start: "top 50% ",
                 end: "bottom 90%%",
                 scrub: 2,
-                markers: true,
             }
         })
 
