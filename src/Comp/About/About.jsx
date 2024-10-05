@@ -1,8 +1,15 @@
 import React from 'react'
+import Abt1 from './Abt1'
+import Abt2 from './Abt2'
+import Abt3 from './Abt3'
 
 function About() {
   return (
-    <div>About</div>
+    <>
+    <Abt1/>
+    <Abt2/>
+    <Abt3/>
+    </>
   )
 }
 
