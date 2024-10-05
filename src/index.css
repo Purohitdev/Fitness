@@ -914,7 +914,9 @@ form div{
 
 .abt1-mid{
   height: 50vh;
-  border: 1px solid black;
+  background-image: url(https://i.pinimg.com/originals/8f/a5/26/8fa52646c0a5ffb7c505fdccb1f167d9.gif);
+  background-position: center;
+  background-size: cover;
 
 }
 
@@ -968,9 +970,27 @@ form div{
 }
 
 .abt3-box{
-  border: 1px solid black;
   height: 100%;
   width: 100%;
+  border-radius: 10px;
+}
+
+.abt3-box:nth-child(1){
+  background-image: url(https://i.pinimg.com/564x/fa/ea/1a/faea1af5713c839b125b86be8a51cc5f.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.abt3-box:nth-child(2){
+  background-image: url(https://i.pinimg.com/enabled/564x/9e/2e/ef/9e2eef29c9fe14c65dc422808ca5d839.jpg);
+  background-size: cover;
+}
+
+.abt3-box:nth-child(3){
+  background-image: url(https://i.pinimg.com/564x/30/4a/21/304a21ccb416302ebe11baed9ec03a91.jpg);
+  background-size: cover;
+  background-position: center;
+
 }
 
 .abt3-mid{

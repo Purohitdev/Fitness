@@ -1,6 +1,42 @@
 import React from 'react'
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 
 function Abt3() {
+
+    useGSAP(() => {
+
+        const tb4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".abt3",
+                start: "top 50% ",
+                end: "bottom 90%%",
+                scrub: 2,
+                markers: true,
+            }
+        })
+
+
+        tb4.from(".abt2-end p", {
+            y: 20,
+            opacity: 0,
+            stagger: 0.2,
+
+        })
+
+        tb4.from(".abt3-mid .abt3-box", {
+            y: 20,
+            opacity: 0,
+            stagger: 0.2,
+
+        })
+
+    })
+
+
   return (
     <div className="abt3">
               <div className="abt2-end">
