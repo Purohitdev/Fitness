@@ -1160,6 +1160,19 @@ form div{
     padding: 50px 20px;
   }
 
+
+  .abt1-btm, .abt2 , .abt1-top , .abt3{
+    padding: 50px 20px;
+  }
+
+  .t1 , .abt3-mid{
+    flex-direction: column;
+  }
+
+  .abt3-mid{
+    height: 130vh;
+  }
+
   
 
 }
