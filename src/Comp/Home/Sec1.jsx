@@ -29,9 +29,9 @@ function Sec1() {
         })
 
         t3.from(".box",{
-            x:50,
-            opacity:0,
-            // stagger:0.1,
+            y: 20,
+            opacity: 0,
+            stagger: 0.2,
     
 
         })
