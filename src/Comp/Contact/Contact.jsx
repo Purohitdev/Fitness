@@ -103,7 +103,7 @@ function Contact() {
             </select>
           </div>
 
-          <button type="submit" className="submit-btn buttonn" >Submit</button>
+          <button type="submit" className="submit-btn button" >Submit</button>
         </form>
       </div>
     </div>
