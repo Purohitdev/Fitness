@@ -1,47 +1,62 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const Login = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+function Login() {
+    const [formData, setFormData] = useState({
+        email: '',
+        password: ''
+    });
     const [message, setMessage] = useState('');
+    const [loading, setLoading] = useState(false);
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
 
     const handleLogin = async (e) => {
         e.preventDefault();
-
+        setLoading(true);
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', { username, password });
-            setMessage(res.data.message); // Displays success message
-            console.log('Login successful:', res.data.token); // Log token for debugging
+            const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+            setMessage(res.data.message || 'Login successful!');
         } catch (error) {
-            if (error.response) {
-                setMessage(error.response.data.error); // Set error message from the server
-            } else {
-                setMessage('Server error');
-            }
+            console.error('Login error:', error);
+            setMessage(error.response?.data?.msg || 'An error occurred. Please try again.');
+        } finally {
+            setLoading(false);
         }
     };
 
     return (
-        <form onSubmit={handleLogin}>
-            <input
-                type="text"
-                placeholder="Username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                required
-            />
-            <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-            />
-            <button type="submit">Login</button>
+        <div>
+            <h2>Login</h2>
+            <form onSubmit={handleLogin}>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                />
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    value={formData.password}
+                    onChange={handleChange}
+                    required
+                />
+                <button type="submit" disabled={loading}>
+                    {loading ? 'Logging in...' : 'Login'}
+                </button>
+            </form>
             {message && <p>{message}</p>}
-        </form>
+        </div>
     );
-};
+}
 
 export default Login;
