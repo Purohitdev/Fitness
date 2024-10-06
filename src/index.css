@@ -1287,6 +1287,18 @@ h2 {
     height: 130vh;
   }
 
+  .ll , .box-mid form , .box-mid p, h2{
+    width: 80%;
+  }
+
+  .reg-box{
+    margin-top: 100px;
+  }
+
+  .reg{
+    padding-bottom: 100px;
+  }
+
 
 
 }
