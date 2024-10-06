@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom'
+
 
 function Login() {
     const [formData, setFormData] = useState({
@@ -31,9 +33,13 @@ function Login() {
     };
 
     return (
-        <div>
-            <h2>Login</h2>
-            <form onSubmit={handleLogin}>
+        <div className='reg new'>
+        <div className="reg-box">
+            <div className="box-mid">
+
+                <h2>Login back in Zoneis</h2>
+                <p>Grab high-class graphics and boost your design workflow</p>
+                <form onSubmit={handleLogin}>
                 <input
                     type="email"
                     name="email"
@@ -50,12 +56,17 @@ function Login() {
                     onChange={handleChange}
                     required
                 />
-                <button type="submit" disabled={loading}>
+                <button type="submit" disabled={loading} className='buttonn'>
                     {loading ? 'Logging in...' : 'Login'}
                 </button>
             </form>
+                 <Link className="nav-link ll" to="/Reg" >Dont have account? regiter then </Link> 
+            </div>
             {message && <p>{message}</p>}
+
         </div>
+
+    </div>
     );
 }
 

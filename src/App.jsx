@@ -36,6 +36,7 @@ import Navb from './Comp/Navb';
 import Foot from './Comp/Foot';
 import { Suspense, lazy } from 'react';
 
+
 // Lazy load components
 const Home = lazy(() => import('./Comp/Home/Home'));
 const About = lazy(() => import('./Comp/About/About'));
@@ -43,6 +44,10 @@ const Testimonials = lazy(() => import('./Comp/Testimonials/Testimonials'));
 const Trainings = lazy(() => import('./Comp/Trainings/Trainings'));
 const Contact = lazy(() => import('./Comp/Contact/Contact'));
 const Register = lazy(() => import('./Comp/Register'));
+const Login = lazy(() => import('./Comp/Auth/Login'));
+const Reg = lazy(() => import('./Comp/Auth/Reg'));
+
+
 
 
 
@@ -71,6 +76,10 @@ function App() {
             <Route path='testimonials' element={<Testimonials />} />
             <Route path='contact' element={<Contact />} />
             <Route path='Register' element={<Register />} />
+            <Route path='Login' element={<Login />} />
+            <Route path='Reg' element={<Reg />} />
+
+
 
           </Route>
         </Routes>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom'
+
 
 function Reg() {
     const [username, setUsername] = useState('');
@@ -18,15 +20,24 @@ function Reg() {
     };
 
     return (
-        <div>
-            <h2>Register</h2>
-            <form onSubmit={handleRegister}>
-                <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} required />
-                <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
-                <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
-                <button type="submit">Register</button>
-            </form>
-            {message && <p>{message}</p>}
+        <div className='reg'>
+            <div className="reg-box">
+                <div className="box-mid">
+
+                    <h2>Register in Zoneis</h2>
+                    <p>Grab high-class graphics and boost your design workflow</p>
+                    <form onSubmit={handleRegister}>
+                        <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} required />
+                        <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
+                        <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
+                        <button type="submit" className='buttonn'>Register</button>
+                    </form>
+                     <Link className="nav-link ll" to="/login" >already have acc ? login  </Link> 
+                </div>
+                {message && <p>{message}</p>}
+
+            </div>
+
         </div>
     );
 }
