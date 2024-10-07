@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 function Contact() {
-
   const [formData, setFormData] = useState({
     name: '',
     age: '',
@@ -10,15 +10,22 @@ function Contact() {
     subscription: 'Basic'
   });
 
+  const [message, setMessage] = useState('');
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Data Submitted:', formData);
-    // You can handle the form submission logic here
+    try {
+      const res = await axios.post('http://localhost:5000/api/form/submit', formData);
+      setMessage(res.data.message || 'Form submitted successfully!');
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setMessage(error.response?.data?.message || 'An error occurred. Please try again.');
+    }
   };
 
   return (
@@ -71,7 +78,7 @@ function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder='devanshpurohit1@gmail.com'
+              placeholder='impic.tech@gmail.com'
               required
             />
           </div>
@@ -95,7 +102,6 @@ function Contact() {
               name="subscription"
               value={formData.subscription}
               onChange={handleChange}
-      
             >
               <option value="Basic">Basic</option>
               <option value="Prime">Prime</option>
@@ -103,12 +109,12 @@ function Contact() {
             </select>
           </div>
 
-          <button type="submit" className="submit-btn button" >Submit</button>
+          <button type="submit" className="submit-btn button">Submit</button>
         </form>
+        {message && <p>{message}</p>}
       </div>
     </div>
   );
 }
 
 export default Contact;
-
