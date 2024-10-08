@@ -14,7 +14,7 @@ function Reg() {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/register', { username, email, password });
+            const res = await axios.post('https://authentication-1ffz.onrender.com/api/auth/register', { username, email, password });
             setMessage(res.data.message);
             setIsSuccess(true);
         } catch (error) {

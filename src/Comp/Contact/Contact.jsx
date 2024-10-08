@@ -20,7 +20,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/form/submit', formData);
+      const res = await axios.post('https://authentication-1ffz.onrender.com/api/form/submit', formData);
       setMessage(res.data.message || 'Form submitted successfully!');
     } catch (error) {
       console.error('Form submission error:', error);
