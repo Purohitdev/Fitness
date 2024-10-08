@@ -14,11 +14,15 @@ function Reg() {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('https://authentication-1ffz.onrender.com/api/auth/register', { username, email, password });
+            const res = await axios.post('https://authentication-1ffz.onrender.com/api/auth/register', { 
+                Username: username, // Ensure the key is exactly as expected
+                email, 
+                password 
+            });
             setMessage(res.data.message);
             setIsSuccess(true);
         } catch (error) {
-            setMessage(error.response ? error.response.data.error : 'An error occurred');
+            setMessage(error.response ? error.response.data.message : 'An error occurred'); // Ensure you're using message
             setIsSuccess(false);
         }
     };
