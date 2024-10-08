@@ -22,7 +22,7 @@ function Login() {
         e.preventDefault();
         setLoading(true);
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+            const res = await axios.post('https://authentication-1ffz.onrender.com/api/auth/login', formData);
             setMessage(res.data.message || 'Login successful!');
         } catch (error) {
             console.error('Login error:', error);
