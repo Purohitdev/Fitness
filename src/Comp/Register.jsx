@@ -9,7 +9,6 @@ function Register() {
         <div className="res">
             <div className="r1">
               <Reg />
-
             </div>
       
         </div>
