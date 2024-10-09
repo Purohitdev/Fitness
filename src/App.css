@@ -120,6 +120,7 @@
 
   .user-box h1{
     font-size: 18px;
+    margin: 0px;
   }
 
   .user-div , .detail-show-form, .detail-show-login{
