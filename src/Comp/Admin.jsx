@@ -81,28 +81,21 @@ function Admin() {
                     ) : errorFormData ? (
                         <p>{errorFormData}</p>
                     ) : (
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Age</th>
-                                    <th>Email</th>
-                                    <th>Address</th>
-                                    <th>Subscription</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {formData.map((data) => (
-                                    <tr key={data._id}>
-                                        <td>{data.name}</td>
-                                        <td>{data.age}</td>
-                                        <td>{data.email}</td>
-                                        <td>{data.address}</td>
-                                        <td>{data.subscription}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                 
+                        <div className="user-div">
+                        {users.map((user) => (
+                            <div className="user-box">
+                                <p> <h1> uid: </h1>{user._id} </p>
+                                <p> <h1>name: </h1>{user.name}</p>
+                                <p> <h1>age: </h1>{user.age}</p>
+                                <p> <h1>email: </h1>{user.email}</p>
+                                <p> <h1>address: </h1>{user.address}</p>
+                                <p> <h1>subscription: </h1>{user.subscription}</p>
+
+                            </div>
+                        ))}
+
+                    </div>
                     )}
                 </div>
             </div>
