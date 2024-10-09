@@ -81,16 +81,16 @@ function Admin() {
                     ) : errorFormData ? (
                         <p>{errorFormData}</p>
                     ) : (
-                 
+    
                         <div className="user-div">
-                        {users.map((user) => (
+                        {users.map((formData) => (
                             <div className="user-box">
-                                <p> <h1> uid: </h1>{user._id} </p>
-                                <p> <h1>name: </h1>{user.name}</p>
-                                <p> <h1>age: </h1>{user.age}</p>
-                                <p> <h1>email: </h1>{user.email}</p>
-                                <p> <h1>address: </h1>{user.address}</p>
-                                <p> <h1>subscription: </h1>{user.subscription}</p>
+                                <p> <h1> uid: </h1>{formData._id} </p>
+                                <p> <h1>name: </h1>{formData.name}</p>
+                                <p> <h1>age: </h1>{formData.age}</p>
+                                <p> <h1>email: </h1>{formData.email}</p>
+                                <p> <h1>address: </h1>{formData.address}</p>
+                                <p> <h1>subscription: </h1>{formData.subscription}</p>
 
                             </div>
                         ))}
