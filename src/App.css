@@ -107,8 +107,13 @@
   .user-box{
     padding: 0px;
     margin: 0px;
+    margin: 20px;
   }
 
   .user-box p{
     margin: 0px;
+  }
+
+  .user-div{
+    overflow: scroll;
   }
