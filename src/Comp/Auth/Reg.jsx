@@ -45,7 +45,7 @@ function Reg() {
                     <Link className="nav-link ll" to="/login">Already a Member? Login Now!</Link>
 
                     {message && (
-                        <div>
+                        <div className='approv'>
                             {isSuccess && <FontAwesomeIcon icon={faCheckCircle} style={{ color: 'green', marginRight: '10px' }} />}
                             <p className='mess'>{message}</p>
                         </div>
