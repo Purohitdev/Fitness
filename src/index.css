@@ -695,8 +695,8 @@ form div {
   justify-content: center;
   margin-top: 22px;
   font-size: 22px;
-  margin-left: -100px;
   align-items: center;
+  width: 100%;
 }
 
 .approv p{
