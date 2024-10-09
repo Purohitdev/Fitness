@@ -46,6 +46,8 @@ const Contact = lazy(() => import('./Comp/Contact/Contact'));
 const Register = lazy(() => import('./Comp/Register'));
 const Login = lazy(() => import('./Comp/Auth/Login'));
 const Reg = lazy(() => import('./Comp/Auth/Reg'));
+const Admin = lazy(() => import('./Comp/Admin'));
+
 
 
 
@@ -78,6 +80,8 @@ function App() {
             <Route path='Register' element={<Register />} />
             <Route path='Login' element={<Login />} />
             <Route path='Reg' element={<Reg />} />
+            <Route path='Admin' element={<Admin />} />
+
 
 
 

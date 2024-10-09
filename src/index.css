@@ -1153,6 +1153,44 @@ h2 {
 
 }
 
+.admin{
+  height: 100vh;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.newlogin , .newform{
+height: 100%;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.newlogin{
+  border-right: 1px solid black;
+}
+
+.upper-admin{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "bold";
+
+}
+
+.upper-admin h1{
+  text-decoration: underline;
+}
+
+.detail-show-form , .detail-show-login{
+  border: 1px solid black;
+  width: 80%;
+  height: 90%;
+}
+
 
 
 
