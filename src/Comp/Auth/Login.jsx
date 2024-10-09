@@ -55,7 +55,7 @@ function Login() {
                             required
                         />
 
-                        <div className="div-btnnn">
+                        <div className="div-btnnn approv">
                         <button type="submit" disabled={loading} className='buttonn'>
                             {loading ? 'Logging in...' : 'Login'}
                         </button>
