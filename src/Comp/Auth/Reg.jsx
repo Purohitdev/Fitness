@@ -47,7 +47,7 @@ function Reg() {
                     {message && (
                         <div className='approv'>
                             {isSuccess && <FontAwesomeIcon icon={faCheckCircle} style={{ color: 'green', marginRight: '10px' }} />}
-                            <p className='mess'>{message} ❌ </p>
+                            <p className='mess'>{message}  </p>
                         </div>
                     )}
                 </div>
