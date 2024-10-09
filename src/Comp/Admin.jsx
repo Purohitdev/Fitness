@@ -14,7 +14,7 @@ function Admin() {
             try {
                 const res = await axios.get('https://authentication-1ffz.onrender.com/api/auth/users', {
                     headers: {
-                        'Authorization': `Bearer ${localStorage.getItem('token')}` 
+                        'Authorization': `Bearer ${localStorage.getItem('token')}`
                     }
                 });
                 setUsers(res.data);
@@ -30,7 +30,7 @@ function Admin() {
             try {
                 const res = await axios.get('https://authentication-1ffz.onrender.com/api/form/data', {
                     headers: {
-                        'Authorization': `Bearer ${localStorage.getItem('token')}` 
+                        'Authorization': `Bearer ${localStorage.getItem('token')}`
                     }
                 });
                 setFormData(res.data);
@@ -58,24 +58,16 @@ function Admin() {
                     ) : errorUsers ? (
                         <p>{errorUsers}</p>
                     ) : (
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Username</th>
-                                    <th>Email</th>
-                                    <th>Password</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {users.map((user) => (
-                                    <tr key={user._id}>
-                                        <td>{user.username}</td>
-                                        <td>{user.email}</td>
-                                        <td>{user.password}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                        <div className="user-div">
+                            {users.map((user) => (
+                                <div className="user-box">
+                                    <p>{user._id} </p>
+                                    <p>{user.username}</p>
+                                    <p>{user.email}</p>
+                                </div>
+                            ))}
+
+                        </div>
                     )}
                 </div>
             </div>
