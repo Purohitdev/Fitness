@@ -83,14 +83,14 @@ function Admin() {
                     ) : (
     
                         <div className="user-div">
-                        {users.map((formData) => (
+                        {formData.map((data) => (
                             <div className="user-box">
-                                <p> <h1> uid: </h1>{formData._id} </p>
-                                <p> <h1>name: </h1>{formData.name}</p>
-                                <p> <h1>age: </h1>{formData.age}</p>
-                                <p> <h1>email: </h1>{formData.email}</p>
-                                <p> <h1>address: </h1>{formData.address}</p>
-                                <p> <h1>subscription: </h1>{formData.subscription}</p>
+                                <p> <h1> uid: </h1>{data._id} </p>
+                                <p> <h1>name: </h1>{data.name}</p>
+                                <p> <h1>age: </h1>{data.age}</p>
+                                <p> <h1>email: </h1>{data.email}</p>
+                                <p> <h1>address: </h1>{data.address}</p>
+                                <p> <h1>subscription: </h1>{data.subscription}</p>
 
                             </div>
                         ))}
