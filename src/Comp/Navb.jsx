@@ -57,11 +57,23 @@ function Navb() {
 
   })
 
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    localStorage.removeItem('user'); // Clear user session
+    navigate('/login'); // Redirect to login page
+  };
+
+  const user = JSON.parse(localStorage.getItem('user')); // Retrieve logged-in user details
+
 
 
   return (
+
+
+
     <>
-      <Navbar expand="lg" className=" Nav">
+      {/* <Navbar expand="lg" className=" Nav">
         <Container>
           <Navbar.Brand href="/" className='logo'>ZONEIS</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -73,7 +85,6 @@ function Navb() {
               <NavLink className="nav-link" to="/Contact">Contact</NavLink>
             </Nav>
             <div className="button-div">
-              {/* <button className='button'>Register</button> */}
               <button class="buttonn" >
 
                 <Link className="nav-link" to="/Register">Register</Link>
@@ -82,7 +93,42 @@ function Navb() {
             </div>
           </Navbar.Collapse>
         </Container>
+      </Navbar> */}
+
+      <Navbar expand="lg" className="Nav">
+        <Container>
+          <Navbar.Brand href="/" className='logo'>ZONEIS</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mx-auto">
+              <NavLink className="nav-link" to="/About">About</NavLink>
+              <NavLink className="nav-link" to="/Trainings">Trainings</NavLink>
+              <NavLink className="nav-link" to="/Testimonials">Testimonials</NavLink>
+              <NavLink className="nav-link" to="/Contact">Contact</NavLink>
+            </Nav>
+            <div className="button-div">
+              {user ? (
+                // Show logout button if the user is logged in
+                <button className="buttonn" onClick={handleLogout}>
+                  Logout
+                </button>
+              ) : (
+                <>
+                  {/* Show Register and Login buttons if no user is logged in */}
+                  <button className="buttonn">
+                    <Link className="nav-link" to="/Register">Register</Link>
+                  </button>
+                  <button className="buttonn">
+                    <Link className="nav-link" to="/Login">Login</Link>
+                  </button>
+                </>
+              )}
+            </div>
+          </Navbar.Collapse>
+        </Container>
       </Navbar>
+
+
 
     </>
   )
