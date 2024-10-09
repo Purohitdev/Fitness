@@ -61,12 +61,14 @@ function Login() {
                         </button>
                         </div>
 
-                        <div className="approv">
-                        {message && <p>{message}</p>}
-                        </div>
+                    
                       
                     </form>
                     <Link className="nav-link ll" to="/Reg">Don't have an account? Register now</Link>
+
+                    <div className="approv">
+                        {message && <p>{message}</p>}
+                        </div>
                 </div>
                
             </div>
