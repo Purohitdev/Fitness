@@ -112,8 +112,9 @@
 
   .user-box p{
     margin: 0px;
+    padding: 10px;
   }
 
-  .user-div{
+  .user-div , .detail-show-form, .detail-show-login{
     overflow: scroll;
   }
