@@ -126,4 +126,9 @@
   .user-div , .detail-show-form, .detail-show-login{
     overflow: scroll;
   }
+
+  .user-div{
+    display: flex;
+    flex-direction: column-reverse;
+  }
   
