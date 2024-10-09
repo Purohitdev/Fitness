@@ -55,16 +55,20 @@ function Login() {
                             required
                         />
 
-                        <div className="div-btnnn approv">
+                        <div className="div-btnnn">
                         <button type="submit" disabled={loading} className='buttonn'>
                             {loading ? 'Logging in...' : 'Login'}
                         </button>
+                        </div>
+
+                        <div className="approv">
+                        {message && <p>{message}</p>}
                         </div>
                       
                     </form>
                     <Link className="nav-link ll" to="/Reg">Don't have an account? Register now</Link>
                 </div>
-                {message && <p>{message}</p>}
+               
             </div>
         </div>
     );
