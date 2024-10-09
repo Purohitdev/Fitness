@@ -114,6 +114,12 @@
 
   .user-box p{
     margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .user-box h1{
+    font-size: 18px;
   }
 
   .user-div , .detail-show-form, .detail-show-login{
