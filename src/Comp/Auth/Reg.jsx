@@ -38,7 +38,9 @@ function Reg() {
                         <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} required />
                         <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
                         <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
-                        <button type="submit" className='buttonn'>Register</button>
+                     <div className="div-btnnn">
+                     <button type="submit" className='buttonn'>Register</button>
+                     </div>
                     </form>
                     <Link className="nav-link ll" to="/login">Already a Member? Login Now!</Link>
                 </div>

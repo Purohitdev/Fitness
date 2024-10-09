@@ -54,9 +54,13 @@ function Login() {
                             onChange={handleChange}
                             required
                         />
+
+                        <div className="div-btnnn">
                         <button type="submit" disabled={loading} className='buttonn'>
                             {loading ? 'Logging in...' : 'Login'}
                         </button>
+                        </div>
+                      
                     </form>
                     <Link className="nav-link ll" to="/Reg">Don't have an account? Register now</Link>
                 </div>
