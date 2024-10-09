@@ -120,9 +120,6 @@ function Navb() {
                   <button className="buttonn">
                     <Link className="nav-link" to="/Register">Register</Link>
                   </button>
-                  <button className="buttonn">
-                    <Link className="nav-link" to="/Login">Login</Link>
-                  </button>
                 </>
               )}
             </div>
