@@ -1,6 +1,6 @@
 // import React, { useState } from 'react';
 // import axios from 'axios';
-// import { Link } from 'react-router-dom';
+// import { Link, useNavigate } from 'react-router-dom';
 
 // function Login() {
 //     const [formData, setFormData] = useState({
@@ -9,6 +9,7 @@
 //     });
 //     const [message, setMessage] = useState('');
 //     const [loading, setLoading] = useState(false);
+//     const navigate = useNavigate();
 
 //     const handleChange = (e) => {
 //         setFormData({
@@ -20,9 +21,20 @@
 //     const handleLogin = async (e) => {
 //         e.preventDefault();
 //         setLoading(true);
+        
+//         // Check if the email and password match admin credentials
+//         if (formData.email === 'xyz@gmail.com' && formData.password === 'xyz@gmail.com') {
+//             setMessage('Admin login successful!');
+//             navigate('/admin');  // Navigate to the admin page
+//             setLoading(false);
+//             return;
+//         }
+
+//         // Proceed with normal login for other users
 //         try {
 //             const res = await axios.post('https://authentication-1ffz.onrender.com/api/auth/login', formData);
 //             setMessage(res.data.message || 'Login successful!');
+//             // Add navigation or redirect if necessary, like navigate('/dashboard');
 //         } catch (error) {
 //             console.error('Login error:', error);
 //             setMessage(error.response?.data?.message || 'An error occurred. Please try again.');
@@ -56,21 +68,17 @@
 //                         />
 
 //                         <div className="div-btnnn">
-//                         <button type="submit" disabled={loading} className='buttonn'>
-//                             {loading ? 'Logging in...' : 'Login'}
-//                         </button>
+//                             <button type="submit" disabled={loading} className='buttonn'>
+//                                 {loading ? 'Logging in...' : 'Login'}
+//                             </button>
 //                         </div>
-
-                   
-                      
 //                     </form>
 //                     <Link className="nav-link ll" to="/Reg">Don't have an account? Register now</Link>
 
 //                     <div className="approv">
 //                         {message && <p>{message} 👋🏻 </p>}
-//                         </div>
+//                     </div>
 //                 </div>
-               
 //             </div>
 //         </div>
 //     );
@@ -102,20 +110,22 @@ function Login() {
     const handleLogin = async (e) => {
         e.preventDefault();
         setLoading(true);
-        
-        // Check if the email and password match admin credentials
-        if (formData.email === 'xyz@gmail.com' && formData.password === 'xyz@gmail.com') {
-            setMessage('Admin login successful!');
-            navigate('/admin');  // Navigate to the admin page
-            setLoading(false);
-            return;
-        }
 
-        // Proceed with normal login for other users
         try {
-            const res = await axios.post('https://authentication-1ffz.onrender.com/api/auth/login', formData);
-            setMessage(res.data.message || 'Login successful!');
-            // Add navigation or redirect if necessary, like navigate('/dashboard');
+            // Check if the user is admin
+            if (formData.email === 'xyz@gmail.com' && formData.password === 'xyz@gmail.com') {
+                // Store user data in localStorage to simulate session
+                localStorage.setItem('user', JSON.stringify({ email: formData.email, role: 'admin' }));
+                setMessage('Admin login successful!');
+                navigate('/Admin'); // Redirect to admin page
+            } else {
+                // Handle normal user login by making a request to your authentication API
+                const res = await axios.post('https://authentication-1ffz.onrender.com/api/auth/login', formData);
+                setMessage(res.data.message || 'Login successful!');
+                localStorage.setItem('user', JSON.stringify({ email: formData.email, role: 'user' }));
+                // Redirect to the home or dashboard after login
+                navigate('/');
+            }
         } catch (error) {
             console.error('Login error:', error);
             setMessage(error.response?.data?.message || 'An error occurred. Please try again.');
@@ -166,3 +176,4 @@ function Login() {
 }
 
 export default Login;
+
