@@ -1181,6 +1181,11 @@ align-items: center;
 
 }
 
+
+.user-box h1{
+  font-family: "bold";
+}
+
 .upper-admin h1{
   text-decoration: underline;
 }

@@ -61,9 +61,9 @@ function Admin() {
                         <div className="user-div">
                             {users.map((user) => (
                                 <div className="user-box">
-                                    <p> uid :{user._id} </p>
-                                    <p> username :{user.username}</p>
-                                    <p> email :{user.email}</p>
+                                    <p> <h1> uid: </h1>{user._id} </p>
+                                    <p> <h1>username: </h1>{user.username}</p>
+                                    <p> <h1>email: </h1>{user.email}</p>
                                 </div>
                             ))}
 
