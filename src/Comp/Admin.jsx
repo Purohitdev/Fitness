@@ -89,7 +89,18 @@ function Admin() {
                 <div className="detail-show-form">
                     {loadingFormData ? (
                         <div className="user-div">
-                            <p>Wait let (Contact) data load it...</p>
+                            <div className="user-div">
+                                <div class="card">
+                                    <div class="loader">
+                                        <p>loading</p>
+                                        <div class="words">
+                                            <span class="word">Contact</span>
+                                            <span class="word">Form</span>
+                                            <span class="word">Data</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     ) : errorFormData ? (
