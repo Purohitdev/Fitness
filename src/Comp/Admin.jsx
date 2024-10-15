@@ -54,7 +54,7 @@ function Admin() {
                 </div>
                 <div className="detail-show-login">
                     {loadingUsers ? (
-                        <p>Loading...</p>
+                        <p>Wait let (Login/register) data load it...</p>
                     ) : errorUsers ? (
                         <p>{errorUsers}</p>
                     ) : (
@@ -77,7 +77,7 @@ function Admin() {
                 </div>
                 <div className="detail-show-form">
                     {loadingFormData ? (
-                        <p>Loading...</p>
+                       <p>Wait let (Contact) data load it...</p>
                     ) : errorFormData ? (
                         <p>{errorFormData}</p>
                     ) : (
