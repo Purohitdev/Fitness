@@ -136,8 +136,8 @@
   /* From Uiverse.io by kennyotsu */ 
 .card {
   /* color used to softly clip top and bottom of the .words container */
-  --bg-color: #212121;
-  background-color: var(--bg-color);
+  /* --bg-color: #212121; */
+  /* background-color: var(--bg-color); */
   padding: 1rem 2rem;
   border-radius: 1.25rem;
 }
@@ -164,12 +164,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     var(--bg-color) 10%,
     transparent 30%,
     transparent 70%,
     var(--bg-color) 90%
-  );
+  ); */
   z-index: 20;
 }
 
