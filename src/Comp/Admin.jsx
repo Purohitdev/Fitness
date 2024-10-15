@@ -54,7 +54,9 @@ function Admin() {
                 </div>
                 <div className="detail-show-login">
                     {loadingUsers ? (
-                        <p>Wait let (Login/register) data load it...</p>
+                        <div className="user-div">
+                            <p>Wait let (Login/register) data load it...</p>
+                        </div>
                     ) : errorUsers ? (
                         <p>{errorUsers}</p>
                     ) : (
@@ -77,25 +79,28 @@ function Admin() {
                 </div>
                 <div className="detail-show-form">
                     {loadingFormData ? (
-                       <p>Wait let (Contact) data load it...</p>
+                        <div className="user-div">
+                            <p>Wait let (Contact) data load it...</p>
+                        </div>
+
                     ) : errorFormData ? (
                         <p>{errorFormData}</p>
                     ) : (
-    
+
                         <div className="user-div">
-                        {formData.map((data) => (
-                            <div className="user-box">
-                                <p> <h1> uid: </h1>{data._id} </p>
-                                <p> <h1>name: </h1>{data.name}</p>
-                                <p> <h1>age: </h1>{data.age}</p>
-                                <p> <h1>email: </h1>{data.email}</p>
-                                <p> <h1>address: </h1>{data.address}</p>
-                                <p> <h1>subscription: </h1>{data.subscription}</p>
+                            {formData.map((data) => (
+                                <div className="user-box">
+                                    <p> <h1> uid: </h1>{data._id} </p>
+                                    <p> <h1>name: </h1>{data.name}</p>
+                                    <p> <h1>age: </h1>{data.age}</p>
+                                    <p> <h1>email: </h1>{data.email}</p>
+                                    <p> <h1>address: </h1>{data.address}</p>
+                                    <p> <h1>subscription: </h1>{data.subscription}</p>
 
-                            </div>
-                        ))}
+                                </div>
+                            ))}
 
-                    </div>
+                        </div>
                     )}
                 </div>
             </div>
