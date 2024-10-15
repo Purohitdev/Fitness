@@ -55,7 +55,16 @@ function Admin() {
                 <div className="detail-show-login">
                     {loadingUsers ? (
                         <div className="user-div">
-                            <p>Wait let (Login/register) data load it...</p>
+                            <div class="card">
+                                <div class="loader">
+                                    <p>loading</p>
+                                    <div class="words">
+                                        <span class="word">Register</span>
+                                        <span class="word">login</span>
+                                        <span class="word">Wait</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     ) : errorUsers ? (
                         <p>{errorUsers}</p>
